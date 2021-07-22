@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  overflow-x: hidden;
+}
+p {
+  color: #000;
+  font-weight: 700;
+}
+.pause-screen {
+  overflow: hidden;
+}
+.blur {
+  opacity: 0.8;
+  background-color: #fff;
+}
+nav a {
+  text-transform: none;
+}
+.intro-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 72pz;
+  /* font-size: 2.7rem; */
+  font-weight: 500;
+}
+.intro-area {
+  padding-top: 7rem;
+}
+.main-area {
+  min-height: 85vh;
+  background-color: aliceblue;
+  background: url("../images/background-1.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.services-area {
+  margin-top: -75px;
+  background-color: #fff;
+}
+.service-card:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.service-shortcuts {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 500;
+}
+nav a {
+  color: #fff;
+}
+.color-white {
+  color: #fff;
+}
+.skill-india-img {
+  margin-top: 15rem;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer a,
+h6 {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+.mr-3 {
+  margin-right: 1.2rem;
+}
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.signup-area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 375px;
+  background-color: #fff;
+}
+.signup-area button {
+  color: #fff;
+  font-size: 1.1rem;
+}
+#signpClose {
+  cursor: pointer;
+}
+.font-2x {
+  font-size: 1rem;
+}
+.intro-section {
+  background-color: #eff8ff;
+  min-height: 100vh;
+}
+.intro-info {
+  padding-top: 13rem;
+}
+.intro-info h1 {
+  font-size: 3rem;
+}
+.intro-info p {
+  font-size: 1.5rem;
+}
+.form-heading {
+  font-size: 1.3rem;
+}
+.join-form {
+  background-color: #105cff;
+  border-radius: 0.7rem;
+}
+.worker-form-area {
+  margin-top: -95px;
+}
+
+footer a {
+  text-decoration: none;
+}
