@@ -36,6 +36,7 @@ nav a {
   color: #fff;
 }
 .services-area {
+  position: relative;
   margin-top: -75px;
   background-color: #fff;
 }
@@ -120,4 +121,28 @@ footer a:hover {
 
 footer a {
   text-decoration: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 48%;
+  left: -50px;
+}
+.right-arrow {
+  position: absolute;
+  top: 48%;
+  right: -50px;
+}
+.service-card {
+  width: 100%;
+  height: 130px;
+  /* justify-content: center; */
+  overflow: hidden;
+  padding-top: 2rem;
+}
+.service-card img {
+  display: block;
+  margin: auto auto;
+  max-width: 30px;
+  margin-bottom: 0.5rem;
 }
