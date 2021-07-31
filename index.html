@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </head>
   <body>
     <!-- *************************************
@@ -28,12 +33,6 @@
       <!-- navbar start -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <!-- <a class="navbar-brand color-white" href="#"
-            ><span class="color-white"> Mansionmakers | </span>
-            <small class="d-none d-md-inline color-white"
-              >Make Your By Your Own</small
-            ></a
-          > -->
           <img
             src="images/logo-tr.png"
             alt="mansionmakers"
@@ -118,7 +117,7 @@
             <div class="row">
               <div class="col-5 col-md-4">
                 <div class="input-group">
-                  <span class="input-group-text">
+                  <span class="input-group-text d-none d-md-inline">
                     <img
                       src="images/indian-flag.png"
                       width="25"
@@ -130,6 +129,7 @@
                     class="form-select input-group-text"
                     id="exampleSelect2"
                   >
+                    <option>Select...</option>
                     <option>New Delhi</option>
                     <option>Faridabad</option>
                     <option>Gurugram</option>
@@ -138,11 +138,78 @@
                 </div>
               </div>
               <div class="col-7 col-md-8">
-                <input
+                <!-- <input
                   type="text"
                   class="form-control"
                   placeholder="Search for a service"
-                />
+                /> -->
+                <select class="search-services form-control py-3" name="state">
+                  <option value=""></option>
+                  <option value="Full House construction">
+                    Full House construction
+                  </option>
+                  <option value="Architecture & Site Planning">
+                    Architecture & Site Planning
+                  </option>
+                  <option value="Painters & Wallpapers">
+                    Painters & Wallpapers
+                  </option>
+                  <option value="Carpenters & Wood Designing">
+                    Carpenters & Wood Designing
+                  </option>
+                  <option value="Interior & Exterior Designing">
+                    Interior & Exterior Designing
+                  </option>
+                  <option value="False Seiling & Roof Designing">
+                    False Seiling & Roof Designing
+                  </option>
+                  <option value="Floor & Tiles Decor">
+                    Floor & Tiles Decor
+                  </option>
+                  <option value="Modular Kitchen">Modular Kitchen</option>
+                  <option value="Designer Bathrooms">Designer Bathrooms</option>
+                  <option value="Electric & Plumbing">
+                    Electric & Plumbing
+                  </option>
+                  <option value="Mirror & Glass Work">
+                    Mirror & Glass Work
+                  </option>
+                  <option value="Gates & Grills">Gates & Grills</option>
+                  <option value="PVC Panel">PVC Panel</option>
+                  <option value="Pooja Room">Pooja Room</option>
+                  <option value="Swimming Pool Construction">
+                    Swimming Pool Construction
+                  </option>
+                  <option value="Submercible Water & Water Pumps">
+                    Submercible Water & Water Pumps
+                  </option>
+                  <option value="Solar Panel Installation">
+                    Solar Panel Installation
+                  </option>
+                  <option value="Garden & Fountains">Garden & Fountains</option>
+                  <option value="Vastushastra Mapping">
+                    Vastushastra Mapping
+                  </option>
+                  <option value="Basement Construction">
+                    Basement Construction
+                  </option>
+                  <option value="water Proofing">water Proofing</option>
+                  <option value="Block Fitting">Block Fitting</option>
+                  <option value="Roof Garden">Roof Garden</option>
+                  <option value="Enamel Painting">Enamel Painting</option>
+                  <option value="Textured Wall">Textured Wall</option>
+                  <option value="New Furniture">New Furniture</option>
+                  <option value="Curtains Assembling">
+                    Curtains Assembling
+                  </option>
+                  <option value="Basin & Sink">Basin & Sink</option>
+                  <option value=" Windows & Door Framing">
+                    Windows & Door Framing
+                  </option>
+                  <option value="Balcony Construction">
+                    Balcony Construction
+                  </option>
+                </select>
                 <p class="py-3 color-white service-shortcuts">
                   <span
                     ><a href="#" class="color-white">Vastushastra Mapping</a>,
@@ -447,6 +514,18 @@
           </div>
         </div>
       </form>
+      <!-- otp form start -->
+      <form action="#" class="p-3">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter OTP" />
+        </div>
+        <div class="form-group my-5">
+          <button class="btn btn-primary text-capitalize form-control">
+            Confirm OTP
+          </button>
+        </div>
+      </form>
+      <!-- otp form end -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -468,12 +547,12 @@
         // autoplayHoverPause: true,
         responsive: {
           0: {
-            items: 1,
+            items: 2,
             nav: true,
             autoplay: false,
             loop: false,
             dotEach: true,
-            slideBy: 1,
+            slideBy: 2,
           },
           600: {
             items: 4,
@@ -492,6 +571,13 @@
             slideBy: 6,
           },
         },
+      });
+
+      $(document).ready(function () {
+        $(".search-services").select2({
+          placeholder: "Search for a service..",
+          allowClear: true,
+        });
       });
     </script>
   </body>
